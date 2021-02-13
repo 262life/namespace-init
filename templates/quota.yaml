@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: quota
+  namespace: {{ .Values.namespace }}
+spec:
+  {{- with .Values.quotaSpec }}
+    {{- toYaml . | nindent 2 }}
+  {{- end }}

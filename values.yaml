@@ -1,0 +1,10 @@
+# Default values for cjf-app-init.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+namespace: test-ns
+
+quotaSpec:
+  hard:
+    cpu: "1"
+    memory: 2Gi
